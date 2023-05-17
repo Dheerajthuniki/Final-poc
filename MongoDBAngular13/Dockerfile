@@ -10,6 +10,8 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+# Run test cases
+RUN npm test
 # Copy the rest of the application files to the container
 COPY . .
 
